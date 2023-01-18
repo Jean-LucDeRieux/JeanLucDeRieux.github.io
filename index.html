@@ -1,170 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <!--Setting up the webpage Details-->
         <meta charset="UTF-8">
         <meta name="viewpoer" content="width=device-width, initial-scale=1.0">
-        <title>Testing Personal Website</title>
-         
+
         <style> 
-        /*
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-            animation-name: example;
-            animation-duration: 4s;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
-            /* normal, reverse, alternate, alternate-reverse 
-            animation-direction: reverse;
-
-        }
-
-        @keyframes example {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:200px; top:0px;}
-            50%  {background-color:blue; left:200px; top:200px;}
-            75%  {background-color:green; left:0px; top:200px;}
-            100% {background-color:red; left:0px; top:0px;} 
-        }
-        */
-
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted black;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -60px;
             
-            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-            opacity: 0;
-            transition: opacity 1s; 
-        }
-        .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-        }
-        
-        /*Image Format for page*/
-        img {
-            border-radius: 10px;
-        }
+            /*Image Format for page*/
+            img {
+                border-radius: 10px;
+            }
 
-        /* Style the body - Font */
-        body {
-        font-family: Arial;
-        margin: 0;
-        }
+            /* Page Content */
+            .content {padding:1px;}
 
-        /* Header */
-        .header {
-            padding: 20px;
-            text-align: center;
-            background: #121413;
-            color: white;
-            font-size: 15px;
-        }
+            /* Style the body - Font */
+            body {
+                font-family: Arial;
+                margin: 0;
+                background-image: url('background1.jpg');
+            }
+            
+            /* Header */
+            .header {
+                padding: 20px;
+                text-align: center;
+                background: #121413;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+            }
 
-        /* Page Content */
-        .content {padding:1px;}
-        body {
-        background-image: url('background1.jpg');
-        }
+            /*URL formating*/
+            a.one:link {color:white;}
+            a.one:visited {color:white;}
+            a.one:hover {color:#007FFF;}
 
-        a.one:link {color:white;}
-        a.one:visited {color:white;}
-        a.one:hover {color:#007FFF;}
+            .PicBox {
+                position: relative;
+                align-items:center;
+                left: 10%;
+                top: 30px;
+            }
 
-        .PicBox {
-            /* display: flex; */
-            top: 25%;
-            left: 5%;
-            align-items:normal;
-            position: absolute;
-        }
+            .AboutBox {
+                position: relative;
+                top: 25%;
+                align-items:center;
+                width: 50%;
+                left: 30px; 
+                top: 40px;
+            }
 
-        .AboutBox {
-            /* display: flex; */
-            top: 25%;
-            left: 30%;
-            align-items:center;
-            position: absolute;
-            width: 50%;
-        }
+            .BioBox {
+                position: relative;
+                align-items:center;
+                width: 50%;
+                left: 30px; 
+                top: 30px;
+            }
 
-        .BioBox {
-            /* display: flex; */
-            top: 50%;
-            left: 30%;
-            align-items:center;
-            position: absolute;
-            width: 50%;
-        }
-        .DetailBox {
-            /* display: flex; */
-            top: 93%;
-            left: 87%;
-            align-items:center;
-            position: absolute;
-            width: 10%;
-        }
-        .bottom {
-            /* position: absolute; */
-            bottom: 10px;
-            align-items:center;
-        }
+            .editiedBox {
+                top: 93%;
+                left: 87%;
+                align-items:center;
+                position: absolute;
+                display:block;
+                width: 10%;
+            }
+            .g-block-1 {
+                width: 50%;
+                height:100%;
+                float:left;
+                display:block;
+                margin:0;
+                padding:0;
+            }
 
-        .button {
-            background-color: transparent; /* Green */
-            border: none;
-            color: lightgrey;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
+            .g-block-2 {
+                width: 50%;
+                height:100%;
+                float: right;
+                display:inline-block;
+                margin:0;
+                padding:0;
+            }
+            .img-with-text {
+                text-align: justify;
+                width: 400;
+            }
 
-        .button1 {
-        background-color: transparent; 
-        color: lightgrey; 
-        border: 2px solid transparent;
-        }
+            /*Main Menu button layout*/
+            .button {
+                background-color: transparent;
+                border: none;
+                color: lightgrey;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
 
-        .button1:hover {
-        background-color: white;
-        color: black;
-        }
+            .button1 {
+            background-color: transparent; 
+            color: lightgrey; 
+            border: 2px solid transparent;
+            }
+
+            .button1:hover {
+            background-color: white;
+            color: black;
+            }
+
+            .dist{
+                width:100%;
+                text-align:center;
+            }
 
         </style>
 
 
     </head>
 
-    <body style="background-color:DarkSlateGrey;">
+    <body style="background-color:DarkSlateGrey;" width="100%;">
 
         <!-- Creating the content of the webpage -->
         <div class="header">
             <h1>Jean-Luc DeRieux Portfolio</h1>
-            <p>Electrical Engineer, Inventor, Eagle Scout </p>
+            <p>Electrical Engineer, Innovator, Eagle Scout </p>
             <a href="./index.html"><button class="button button1"> Main Menu </button></a>
             <a href="./Projects.html"><button class="button button1"> Projects </button></a>
             <a href="./Videos.html"><button class="button button1"> Videos </button></a>
@@ -173,32 +142,40 @@
         </div>
 
         <!-- Profile Picture -->
-        <div class="PicBox">
-            <img src="./ProfilePicture.jpg" alt="Jean-Luc DeRieux" width="400" height="600">
-            <h1 style="color:white;">Jean-Luc DeRieux</h1> 
+        <div class="g-block-1"> <div class="dist"> 
+                <div class="PicBox">
+                    <img src="./ProfilePicture.jpg" alt="Jean-Luc DeRieux" width="400" height="600" align="center">
+                    
+                    <h1 style="color:white;">Jean-Luc DeRieux</h1> </div>
+                </div>
         </div>
 
-        <div class="AboutBox">
-            <h1 style="color:white;">About</h1> 
-            <p style="color:white;"> 
-                Welcome to my Website! This site is dedicated to display my accomplishments, technical expertise and current projects that I am working on.
-            </p>
+        <div class="g-block-2"> 
+            <div class="AboutBox">
+                <h1 style="color:white;">About</h1> 
+                <p style="color:white;"> 
+                    Welcome to my Website! This site is dedicated to display my accomplishments, technical expertise, past and current projects that I am working on.
+                </p>
+            </div>
         </div>
-        <div class="BioBox">
-            <h1 style="color:white;">Bio</h1> 
-            <p style="color:white;"> 
-                An Electrical Engineer with a strong work ethic and an innovative mindset. 
-                Throughout my studies and professional experience, I have gained a broad range of skills in engineering, 
-                including programming, machine learning, artificial intelligence, mathematics, CAD software, robotics, 
-                circuit design, and team leadership.
-                My areas of interest include space systems, signal processing, control systems, 
-                robotics, software development, and machine learning.
-            </p>
+
+        <div class="g-block-2"> 
+            <div class="BioBox">
+                <h1 style="color:white;">Bio</h1> 
+                <p style="color:white;"> 
+                    An Electrical Engineer with a strong work ethic and an innovative mindset. 
+                    Throughout my studies and professional experience, I have gained a broad range of skills in engineering, 
+                    including programming, machine learning, artificial intelligence, mathematics, CAD software, robotics, 
+                    circuit design, and team leadership.
+                    My areas of interest include space systems, signal processing, control systems, 
+                    robotics, software development, and machine learning.
+                </p>
+            </div>
         </div>
         <br><br><br><br>
 
-        <div class="DetailBox"> 
-            <p style="color:white;">Last editied: 01/17/2023</p>
+        <div class="editiedBox"> 
+            <p style="color:white;">Last editied: 01/18/2023</p>
         </div>
 
       
@@ -220,3 +197,5 @@ External CSS	The <link> tag	        The whole website
             style="font-family:verdana;"
             style="background-color:tomato;"
 -->
+
+<!--The <div> tag defines a division or a section in an HTML document-->
