@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Setting up the webpage Details-->
+        <meta charset="UTF-8">
+        <meta name="viewpoer" content="width=device-width, initial-scale=1.0">
+        <title>Testing Personal Website</title>
+         
+        <style> 
+        /*
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            /* normal, reverse, alternate, alternate-reverse 
+            animation-direction: reverse;
+
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;} 
+        }
+        */
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 1s; 
+        }
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        }
+        
+        /*Image Format for page*/
+        img {
+            border-radius: 10px;
+        }
+
+        /* Style the body - Font */
+        body {
+        font-family: Arial;
+        margin: 0;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #121413;
+            color: white;
+            font-size: 15px;
+        }
+
+        /* Page Content */
+        .content {padding:1px;}
+        body {
+        background-image: url('background1.jpg');
+        }
+
+        a.one:link {color:white;}
+        a.one:visited {color:white;}
+        a.one:hover {color:#007FFF;}
+
+        .Box {
+            /* display: flex; */
+            align-items:normal;
+            position: absolute;
+        }
+        .bottom {
+            /* position: absolute; */
+            bottom: 10px;
+            align-items:center;
+        }
+
+        .button {
+            background-color: transparent; /* Green */
+            border: none;
+            color: lightgrey;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+        background-color: transparent; 
+        color: lightgrey; 
+        border: 2px solid transparent;
+        }
+
+        .button1:hover {
+        background-color: white;
+        color: black;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        td, tr, th {
+            border: 1px solid black;
+            background-color: white;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            text-align: center;
+        }
+
+        /* tr:nth-child(even) {
+        background-color: #dddddd;
+        } */
+
+        </style>
+
+
+    </head>
+
+    <body style="background-color:DarkSlateGrey;">
+
+        <!-- Creating the content of the webpage -->
+        <div class="header">
+            <h1>Jean-Luc DeRieux Portfolio</h1>
+            <p>Electrical Engineer, Inventor, Eagle Scout </p>
+            <a href="./Main.html"><button class="button button1"> Main Menu </button></a>
+            <a href="./Projects.html"><button class="button button1"> Projects </button></a>
+            <a href="./Videos.html"><button class="button button1"> Videos </button></a>
+            <a href="./Courses.html"><button class="button button1"> Courses Taken </button></a>
+            <a href="./Links.html"><button class="button button1"> Links </button></a>
+        </div>
+    
+        
+<h2>HTML Table</h2>
+<table>
+    <tr>
+        <th>College</th>
+        <th>Course Number</th>
+        <th>Course Name</th>
+        <th>About</th>
+        <th>Tools Utilized</th>
+    </tr>
+    <tr>
+        <th colspan="5">Software Courses</th>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 4580</td>
+        <td>Digital Image Processing</td>
+        <td>This course provides an introduction to basic concepts, methodologies and algorithms of digital image processing focusing on the following two major problems concerned with digital images: (1) image enhancement and restoration for easier interpretation of images, and (2) image analysis and object recognition. Some advanced image processing techniques (e.g., wavelet and multiresolution processing) will also be studied in this course. The primary goal of this course is to lay a solid foundation for students to study advanced image analysis topics such as computer vision systems, biomedical image analysis, and multimedia processing & retrieval.</td>
+        <td>Python[NumPy, OpenCV, matplotlib], MATLAB[Image Processing Toolbox]</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 4524</td>
+        <td>Artificial Intelligence</td>
+        <td>Problem solving methods; problem spaces; search techniques; knowledge representation; programming languages for AI; games; predicate logic; knowledge-based systems; machine learning; planning techniques; reactive systems; artifical neural networks; natural language understanding; computer vision; robotics.</td>
+        <td>Python, AI(Decision Tree, Naive Bayes)</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 4424</td>
+        <td>Machine Learning</td>
+        <td>Algorithms and principles involved in machine learning: focus on perception problems arising in computer vision, natural language processing and robotics; fundamentals of representing uncertainty, learning from data, supervised learning, ensemble methods, unsupervised learning, structured models, learning theory and reinforcement learning; design and analysis of machine perception systems; design and implementation of a technical project applied to real-world datasets (images, text, robotics).</td>
+        <td>Python[NumPy, TensorFlow, matplotlib], Jupyter, ML(Linear Regression, Logistic Regression, Decision Tree, SVM, kNN, K-Means)</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3574</td>
+        <td>Applied Software Design</td>
+        <td>This course is an introduction to applied software design methods for use in the writing of efficient, reusable, and modulator C++ programs. These methods include the use of the following: classes, inheritance, and polymorphism; design patterns; high-level programming techniques using libraries, generics, and containers; widgets, models, and views; software frameworks for embedded systems; and advanced techniques ranging from multi-threading to reflective programming.</td>
+        <td>C++[Qt, Catch, STL]</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3514</td>
+        <td>Data Structures and Algorithms</td>
+        <td>Introduction of fundamental data structures, algorithms, and abstract data types. Data structures, arrays, linked lists, stacks, queues, and trees. Algorithms for manipulation, sorting, searching. Tree traversals. Implementation of data structures and algorithms in C++ using good design practices.</td>
+        <td>C++[Catch] (Arrays, Linked-lists, Arrays, Dynamic Arrays, Vector, Deque, Heaps, Hash-tables, Trees, Graphs)</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3504</td>
+        <td>Computer Architecture</td>
+        <td>Instruction formats and construction. Addressing modes. Memory hierarchy (cache, main memory and secondary memory) operation and performance. Simple pipelines. Basic performance analysis. Simple Operating System (OS) functions, particularly as they relate to hardware. Virtual memory. Computer Input/Output (I/O) concepts, including interrupt and Direct Memory Access (DMA) mechanisms. Intercomputer communication concepts. Processor design.</td>
+        <td>QtSpim,MIPs assembly language, Python[NumPy]</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 2564</td>
+        <td>Embedded Systems</td>
+        <td>Use of microcontroller-based embedded systems for digital control and sensing in engineering applications. Topics include programming methodologies, finite-state machine modeling, event-driven programming, sensor and actuator integration, hardware and software design, and development toolchains. It also covers professional project management and version control.</td>
+        <td>Embedded C, MSP432</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 2544</td>
+        <td>Fundamentals Digital Systems</td>
+        <td>Design and analysis of digital systems. Information representations and computer arithmetic. Switch and gate design within digital logic. Combinational logic analysis and synthesis, Hardware Description Languages (HDL), and hierarchical design. Finite-state machines, synchronous sequential logic analysis and design. Hardware specification and documentation. Register transfer level architectures, computer organization, memories, and digital interfacing. Instruction set architecture and assembly language programming. Emphasis on the relationship between software and hardware. </td>
+        <td>FPGA, Verliog, Intel Quartus Prime</td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 2514</td>
+        <td>Computational Engineering</td>
+        <td>Computing abstractions and the use of application programming interfaces. Software design and implementation using a procedural, class-based language. C++ was the programing language used.</td>
+        <td>C++[Catch, STL]</td>
+    </tr>
+    <tr>
+        <td>Germanna Community College</td>
+        <td>EGR 126</td>
+        <td>Computer Programming for Engineers</td>
+        <td>Introductory course to computer programing.</td>
+        <td>C++[STL], MATLAB</td>
+    </tr>
+    <tr>
+        <th colspan="5">Hardware Courses</th>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3074</td>
+        <td>AC Circuit Analysis Laboratory</td>
+        <td>Construction, analysis, and characterization of circuits with student-owned Lab-in-a-Box system. Experiments include: sinusoids and phasors including impedance, admittance, and Kirchhoff's laws; sinusoidal steady-state analysis including node and mesh analysis, Thevenin and Norton equivalent, and op amps; ac power analysis including instantaneous and average power, power factor, and complex power; magnetically coupled circuits including mutual inductance, energy in a coupled circuit, and transformers; frequency response including transfer functions, Bode plots, resonance, and passive and active filters; and two-port circuits.</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 2214</td>
+        <td>Physical Electronics</td>
+        <td>Fundamentals of electrostatics and magnetostatics, transmission lines, impedance matching networks, electromagnetic (EM) waves, and basic operating principles of diodes and metal-oxide semiconductor field-effect transistors (MOSFETs). Designing MOSFET biasing, and single-ended and differential amplifier circuits. Basic operating principles of complementary metal-oxide semiconductor (CMOS) device and its application as a digital inverter. Electronic circuit design adhering to professional and ethical practices. </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <th colspan="5">Signals Courses</th>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3714</td>
+        <td>Intro to Control Systems </td>
+        <td>Introduction to the design of feedback compensation to improve the transient and steady-state performance of systems. Emphasis is on modeling, analysis and analog compensator design for single-input single-output systems. Modeling techniques, root locus analysis and design, the Nyquist criterion, and frequency domain compensation. </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 3704</td>
+        <td>Cont and Disc Systems</td>
+        <td>Continuous- and discrete-time system theory. Block diagrams, feedback, and stability theory. System analysis with Bode diagrams. Discrete-time stability, difference equations, Z-transforms, transfer functions, Fourier transforms, and frequency response. Sampling of continuous systems and an introduction to digital filtering, Hands-on projects to illustrate and integrate the various continuous- and discrete-time concepts and tools. </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Virginia Tech</td>
+        <td>ECE 2714</td>
+        <td>Signals and Systems</td>
+        <td>Mathematical methods for the analysis and design of continuous and discrete linear, time-invariant systems. Representation of signals using time-domain and frequency-domain methods and the application of Fourier transforms to linear system design and analysis. Descriptions of systems as signal transformations using block diagrams, differential equations, difference equations, convolution, and transfer functions. Applications to signal filtering, measurement, and control of the physical devices. Formal project documentation adhering to professional practices. </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Germanna Community College</td>
+        <td>EGR 261</td>
+        <td>Signals and Systems</td>
+        <td>Covers topics including Laplace transforms and Laplace transform analysis of circuits, time and frequency domain representation of linear systems, methods of linear systems analysis including convolution and Laplace transforms, frequency domain representation of signals including frequency response, filters, Fourier series, and Fourier transforms. </td>
+        <td> </td>
+    </tr>
+  </table>
+  <br><br><br><br>
+
+
+    </body>
+</html>
+
+
+<!--
+   Type	           Added with	            Best for
+Inline CSS	    The style attribute  	A single element
+Internal CSS	The <style> tag	        A single web page
+External CSS	The <link> tag	        The whole website
+-->
+
+ <!-- 
+            Style Types
+            style="font-size:160%;"
+            style="text-align:center;"
+            style="font-family:verdana;"
+            style="background-color:tomato;"
+-->

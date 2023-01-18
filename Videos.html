@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Setting up the webpage Details-->
+        <meta charset="UTF-8">
+        <meta name="viewpoer" content="width=device-width, initial-scale=1.0">
+        <title>Testing Personal Website</title>
+         
+        <style> 
+        /*
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            /* normal, reverse, alternate, alternate-reverse 
+            animation-direction: reverse;
+
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;} 
+        }
+        */
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 1s; 
+        }
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        }
+        
+        /*Image Format for page*/
+        img {
+            border-radius: 10px;
+        }
+
+        /* Style the body - Font */
+        body {
+        font-family: Arial;
+        margin: 0;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #121413;
+            color: white;
+            font-size: 15px;
+        }
+
+        /* Page Content */
+        .content {padding:1px;}
+        body {
+        background-image: url('background1.jpg');
+        }
+
+        a.one:link {color:white;}
+        a.one:visited {color:white;}
+        a.one:hover {color:#007FFF;}
+
+        .Box {
+            /* display: flex; */
+            align-items:normal;
+            position: absolute;
+        }
+        .bottom {
+            /* position: absolute; */
+            bottom: 10px;
+            align-items:center;
+        }
+
+        .button {
+            background-color: transparent; /* Green */
+            border: none;
+            color: lightgrey;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+        background-color: transparent; 
+        color: lightgrey; 
+        border: 2px solid transparent;
+        }
+
+        .button1:hover {
+        background-color: white;
+        color: black;
+        }
+
+        </style>
+
+
+    </head>
+
+    <body style="background-color:DarkSlateGrey;">
+
+        <!-- Creating the content of the webpage -->
+        <div class="header">
+            <h1>Jean-Luc DeRieux Portfolio</h1>
+            <p>Electrical Engineer, Inventor, Eagle Scout </p>
+            <a href="./Main.html"><button class="button button1"> Main Menu </button></a>
+            <a href="./Projects.html"><button class="button button1"> Projects </button></a>
+            <a href="./Videos.html"><button class="button button1"> Videos </button></a>
+            <a href="./Courses.html"><button class="button button1"> Courses Taken </button></a>
+            <a href="./Links.html"><button class="button button1"> Links </button></a>
+        </div>
+
+        <div align="center"> 
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/z_GCc63Ym54">
+        </iframe>
+        
+
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/QMeuSyW957I">
+        </iframe>
+
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/2fH9ZFWkDmc">
+        </iframe>
+        </div>
+        <br><br><br><br>
+        
+
+    </body>
+</html>
+
+
+<!--
+   Type	           Added with	            Best for
+Inline CSS	    The style attribute  	A single element
+Internal CSS	The <style> tag	        A single web page
+External CSS	The <link> tag	        The whole website
+-->
+
+ <!-- 
+            Style Types
+            style="font-size:160%;"
+            style="text-align:center;"
+            style="font-family:verdana;"
+            style="background-color:tomato;"
+-->
