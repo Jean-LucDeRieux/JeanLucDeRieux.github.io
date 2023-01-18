@@ -7,124 +7,61 @@
         <title>Testing Personal Website</title>
          
         <style> 
-        /*
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-            animation-name: example;
-            animation-duration: 4s;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
-            /* normal, reverse, alternate, alternate-reverse 
-            animation-direction: reverse;
+            /*Image Format for page*/
+            img {
+                border-radius: 10px;
+            }
 
-        }
+            /* Page Content */
+            .content {padding:1px;}
 
-        @keyframes example {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:200px; top:0px;}
-            50%  {background-color:blue; left:200px; top:200px;}
-            75%  {background-color:green; left:0px; top:200px;}
-            100% {background-color:red; left:0px; top:0px;} 
-        }
-        */
-
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted black;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -60px;
+            /* Style the body - Font */
+            body {
+                font-family: Arial;
+                margin: 0;
+                background-image: url('background1.jpg');
+            }
             
-            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-            opacity: 0;
-            transition: opacity 1s; 
-        }
-        .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-        }
-        
-        /*Image Format for page*/
-        img {
-            border-radius: 10px;
-        }
+            /* Header */
+            .header {
+                padding: 20px;
+                text-align: center;
+                background: #121413;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+            }
 
-        /* Style the body - Font */
-        body {
-        font-family: Arial;
-        margin: 0;
-        }
+            /*URL formating*/
+            a.one:link {color:white;}
+            a.one:visited {color:white;}
+            a.one:hover {color:#007FFF;}
 
-        /* Header */
-        .header {
-            padding: 20px;
-            text-align: center;
-            background: #121413;
-            color: white;
-            font-size: 15px;
-        }
+            /*Menu bar buttons*/
+            .button {
+                background-color: transparent; /* Green */
+                border: none;
+                color: lightgrey;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
 
-        /* Page Content */
-        .content {padding:1px;}
-        body {
-        background-image: url('background1.jpg');
-        }
+            .button1 {
+            background-color: transparent; 
+            color: lightgrey; 
+            border: 2px solid transparent;
+            }
 
-        a.one:link {color:white;}
-        a.one:visited {color:white;}
-        a.one:hover {color:#007FFF;}
-
-        .Box {
-            /* display: flex; */
-            align-items:normal;
-            position: absolute;
-        }
-        .bottom {
-            /* position: absolute; */
-            bottom: 10px;
-            align-items:center;
-        }
-
-        .button {
-            background-color: transparent; /* Green */
-            border: none;
-            color: lightgrey;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        .button1 {
-        background-color: transparent; 
-        color: lightgrey; 
-        border: 2px solid transparent;
-        }
-
-        .button1:hover {
-        background-color: white;
-        color: black;
-        }
+            .button1:hover {
+            background-color: white;
+            color: black;
+            }
 
         </style>
 
@@ -141,18 +78,19 @@
             <a href="./Projects.html"><button class="button button1"> Projects </button></a>
             <a href="./Videos.html"><button class="button button1"> Videos </button></a>
             <a href="./Courses.html"><button class="button button1"> Courses Taken </button></a>
+            <a href="./Resume.html"><button class="button button1"> Resume </button></a>
             <a href="./Links.html"><button class="button button1"> Links </button></a>
         </div>
         
         <!-- Links -->
         <img src="./LI-In-Bug.png" alt="Jean-Luc DeRieux" width="120" height="100">
-        <p><b><a style="font-size:200%;" class="one" href="https://www.linkedin.com/in/jeanlucderieux/" target="_blank">LinkedIn</a></b></p>
+        <p><b><a style="font-size:200%;" class="one" href="https://www.linkedin.com/in/jeanlucderieux/" target="_blank">My LinkedIn</a></b></p>
         <img src="./yt_icon_rgb.png" alt="Jean-Luc DeRieux" width="125" height="100">
         <p><b><a style="font-size:200%;" class="one" href="https://www.youtube.com/channel/UCsNXkGRtDRCdYrdP8VsFB-g" target="_blank">Main YouTube Channel</a></b></p>
         <img src="./yt_icon_rgb.png" alt="Jean-Luc DeRieux" width="125" height="100">
         <p><b><a style="font-size:200%;" class="one" href="https://www.youtube.com/channel/UC6xXebw9ozslLf3kWl4cKtw" target="_blank">School YouTube Channel</a></b></p>
         <img src="./github-mark-white.png" alt="Jean-Luc DeRieux" width="105" height="105">
-        <p><b><a style="font-size:200%;" class="one" href="https://github.com/Jean-LucDeRieux" target="_blank">GitHub</a></b></p>
+        <p><b><a style="font-size:200%;" class="one" href="https://github.com/Jean-LucDeRieux" target="_blank">My GitHub</a></b></p>
 
         <br><br><br><br>
 
